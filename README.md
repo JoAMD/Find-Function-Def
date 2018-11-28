@@ -1,1 +1,5 @@
 # Find-Function-Def
+A simple C++ program to find a given function definition in a given source code and print out the line number of the function definition.
+
+Details:
+Implement the following C/C++ function: unsigned int FindFunctionDefn( const char* strFunctionName, const char* strSourceCode ); FindFunctionDefn takes two strings as inputs: a function name and a program string; it returns as an output the line number that contains the function definition (differentiate this with the function calls) in the program string. The program string is a valid C code; it contains a character "\n" indicate the end of a line with the line number starts from one. The program string is guaranteed not to contain any C (or C++) comments. The function FindFunctionDefn returns 0 if it fails to find the function definition. For example, char strFunctionName[] = "func2"; char strSourceCode[] = "int func1(){ return 0; }\\n int func2(){ return 1; }\\n" "int main(int argc, char*argv[]){ return func2(); }\\n"; FindFunctionDefn( strFunctionName, strSourceCode ) should return 2. 
